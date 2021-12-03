@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		271CF14827575A530023460F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271CF14727575A530023460F /* WelcomeViewController.swift */; };
+		278560F1275732F000790CE3 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278560F0275732F000790CE3 /* InfoViewController.swift */; };
+		27AA9D532752E9D500CE86E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AA9D522752E9D500CE86E0 /* Assets.xcassets */; };
+		27AA9D562752E9D500CE86E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AA9D552752E9D500CE86E0 /* Preview Assets.xcassets */; };
+		27AA9D602752E9D500CE86E0 /* RockAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D5F2752E9D500CE86E0 /* RockAnalyzerTests.swift */; };
+		27AA9D6A2752E9D500CE86E0 /* RockAnalyzerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D692752E9D500CE86E0 /* RockAnalyzerUITests.swift */; };
+		27AA9D6C2752E9D500CE86E0 /* RockAnalyzerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D6B2752E9D500CE86E0 /* RockAnalyzerUITestsLaunchTests.swift */; };
+		27AA9D892752EBC300CE86E0 /* ImagePredictor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D7B2752EBC300CE86E0 /* ImagePredictor.swift */; };
+		27AA9D8A2752EBC300CE86E0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D7D2752EBC300CE86E0 /* MainViewController.swift */; };
+		27AA9D8B2752EBC300CE86E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AA9D7E2752EBC300CE86E0 /* Main.storyboard */; };
+		27AA9D8C2752EBC300CE86E0 /* MainViewController+CameraPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D802752EBC300CE86E0 /* MainViewController+CameraPicker.swift */; };
+		27AA9D8D2752EBC300CE86E0 /* MainViewController+PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D812752EBC300CE86E0 /* MainViewController+PhotoPicker.swift */; };
+		27AA9D8E2752EBC300CE86E0 /* VNClassificationObservation+confidenceString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D832752EBC300CE86E0 /* VNClassificationObservation+confidenceString.swift */; };
+		27AA9D8F2752EBC300CE86E0 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9D842752EBC300CE86E0 /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		27AA9D912752EBC300CE86E0 /* NOTICE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27AA9D872752EBC300CE86E0 /* NOTICE.txt */; };
+		27AA9D922752EBC300CE86E0 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 27AA9D882752EBC300CE86E0 /* LICENSE.txt */; };
+		27AA9DA32752F35B00CE86E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27AA9D9F2752F35B00CE86E0 /* LaunchScreen.storyboard */; };
+		27AA9DA42752F35B00CE86E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA9DA12752F35B00CE86E0 /* AppDelegate.swift */; };
+		27F9566E2758BA350040180E /* icon_40pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9565E2758BA160040180E /* icon_40pt@2x.png */; };
+		27F9566F2758BA350040180E /* icon_29pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9565F2758BA190040180E /* icon_29pt.png */; };
+		27F956702758BA350040180E /* icon_29pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956602758BA1B0040180E /* icon_29pt@2x.png */; };
+		27F956712758BA350040180E /* icon_20pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956612758BA1D0040180E /* icon_20pt.png */; };
+		27F956722758BA350040180E /* icon_76pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956622758BA1F0040180E /* icon_76pt.png */; };
+		27F956732758BA350040180E /* icon_76pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956632758BA210040180E /* icon_76pt@2x.png */; };
+		27F956742758BA350040180E /* icon_29pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956642758BA230040180E /* icon_29pt@3x.png */; };
+		27F956752758BA350040180E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956652758BA250040180E /* Icon.png */; };
+		27F956762758BA350040180E /* icon_83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956662758BA270040180E /* icon_83.5@2x.png */; };
+		27F956772758BA350040180E /* iOS App Icon Template.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956672758BA290040180E /* iOS App Icon Template.png */; };
+		27F956782758BA350040180E /* icon_40pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956682758BA2B0040180E /* icon_40pt@3x.png */; };
+		27F956792758BA350040180E /* icon_60pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956692758BA2D0040180E /* icon_60pt@3x.png */; };
+		27F9567A2758BA350040180E /* icon_40pt.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9566A2758BA2F0040180E /* icon_40pt.png */; };
+		27F9567B2758BA350040180E /* icon_20pt@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9566B2758BA310040180E /* icon_20pt@3x.png */; };
+		27F9567C2758BA350040180E /* icon_20pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9566C2758BA330040180E /* icon_20pt@2x.png */; };
+		27F9567D2758BA350040180E /* icon_60pt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F9566D2758BA350040180E /* icon_60pt@2x.png */; };
+		27F956812758BD1A0040180E /* RockAI Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F956802758BD1A0040180E /* RockAI Icon.png */; };
+		27F956832759DFCF0040180E /* RockNet_v2_quant.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 27F956822759DFCE0040180E /* RockNet_v2_quant.mlmodel */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27AA9D5C2752E9D500CE86E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27AA9D432752E9D400CE86E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27AA9D4A2752E9D400CE86E0;
+			remoteInfo = RockAnalyzer;
+		};
+		27AA9D662752E9D500CE86E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27AA9D432752E9D400CE86E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27AA9D4A2752E9D400CE86E0;
+			remoteInfo = RockAnalyzer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		271CF14727575A530023460F /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		278560F0275732F000790CE3 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		27AA9D4B2752E9D400CE86E0 /* RockAnalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockAnalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27AA9D522752E9D500CE86E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27AA9D552752E9D500CE86E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27AA9D5B2752E9D500CE86E0 /* RockAnalyzerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27AA9D5F2752E9D500CE86E0 /* RockAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAnalyzerTests.swift; sourceTree = "<group>"; };
+		27AA9D652752E9D500CE86E0 /* RockAnalyzerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RockAnalyzerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27AA9D692752E9D500CE86E0 /* RockAnalyzerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAnalyzerUITests.swift; sourceTree = "<group>"; };
+		27AA9D6B2752E9D500CE86E0 /* RockAnalyzerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RockAnalyzerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		27AA9D7B2752EBC300CE86E0 /* ImagePredictor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePredictor.swift; sourceTree = "<group>"; };
+		27AA9D7D2752EBC300CE86E0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		27AA9D7F2752EBC300CE86E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27AA9D802752EBC300CE86E0 /* MainViewController+CameraPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+CameraPicker.swift"; sourceTree = "<group>"; };
+		27AA9D812752EBC300CE86E0 /* MainViewController+PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainViewController+PhotoPicker.swift"; sourceTree = "<group>"; };
+		27AA9D832752EBC300CE86E0 /* VNClassificationObservation+confidenceString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VNClassificationObservation+confidenceString.swift"; sourceTree = "<group>"; };
+		27AA9D842752EBC300CE86E0 /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		27AA9D872752EBC300CE86E0 /* NOTICE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = NOTICE.txt; sourceTree = "<group>"; };
+		27AA9D882752EBC300CE86E0 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		27AA9DA02752F35B00CE86E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27AA9DA12752F35B00CE86E0 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27F9565E2758BA160040180E /* icon_40pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@2x.png"; sourceTree = "<group>"; };
+		27F9565F2758BA190040180E /* icon_29pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_29pt.png; sourceTree = "<group>"; };
+		27F956602758BA1B0040180E /* icon_29pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@2x.png"; sourceTree = "<group>"; };
+		27F956612758BA1D0040180E /* icon_20pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_20pt.png; sourceTree = "<group>"; };
+		27F956622758BA1F0040180E /* icon_76pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_76pt.png; sourceTree = "<group>"; };
+		27F956632758BA210040180E /* icon_76pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_76pt@2x.png"; sourceTree = "<group>"; };
+		27F956642758BA230040180E /* icon_29pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_29pt@3x.png"; sourceTree = "<group>"; };
+		27F956652758BA250040180E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		27F956662758BA270040180E /* icon_83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_83.5@2x.png"; sourceTree = "<group>"; };
+		27F956672758BA290040180E /* iOS App Icon Template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS App Icon Template.png"; sourceTree = "<group>"; };
+		27F956682758BA2B0040180E /* icon_40pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_40pt@3x.png"; sourceTree = "<group>"; };
+		27F956692758BA2D0040180E /* icon_60pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@3x.png"; sourceTree = "<group>"; };
+		27F9566A2758BA2F0040180E /* icon_40pt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_40pt.png; sourceTree = "<group>"; };
+		27F9566B2758BA310040180E /* icon_20pt@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20pt@3x.png"; sourceTree = "<group>"; };
+		27F9566C2758BA330040180E /* icon_20pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_20pt@2x.png"; sourceTree = "<group>"; };
+		27F9566D2758BA350040180E /* icon_60pt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_60pt@2x.png"; sourceTree = "<group>"; };
+		27F956802758BD1A0040180E /* RockAI Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "RockAI Icon.png"; sourceTree = "<group>"; };
+		27F956822759DFCE0040180E /* RockNet_v2_quant.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = RockNet_v2_quant.mlmodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27AA9D482752E9D400CE86E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA9D582752E9D500CE86E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA9D622752E9D500CE86E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278560EF2757329700790CE3 /* Info View */ = {
+			isa = PBXGroup;
+			children = (
+				278560F0275732F000790CE3 /* InfoViewController.swift */,
+			);
+			path = "Info View";
+			sourceTree = "<group>";
+		};
+		278560F227575A0200790CE3 /* Welcome View */ = {
+			isa = PBXGroup;
+			children = (
+				271CF14727575A530023460F /* WelcomeViewController.swift */,
+			);
+			path = "Welcome View";
+			sourceTree = "<group>";
+		};
+		27AA9D422752E9D400CE86E0 = {
+			isa = PBXGroup;
+			children = (
+				27AA9D9E2752F35B00CE86E0 /* App */,
+				27AA9D822752EBC300CE86E0 /* Extensions */,
+				27AA9D7A2752EBC300CE86E0 /* Image Predictor */,
+				27AA9D7C2752EBC300CE86E0 /* Main View */,
+				278560F227575A0200790CE3 /* Welcome View */,
+				278560EF2757329700790CE3 /* Info View */,
+				27AA9D852752EBC300CE86E0 /* Models */,
+				27AA9D4D2752E9D400CE86E0 /* RockAnalyzer */,
+				27AA9D5E2752E9D500CE86E0 /* RockAnalyzerTests */,
+				27AA9D682752E9D500CE86E0 /* RockAnalyzerUITests */,
+				27AA9D4C2752E9D400CE86E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27AA9D4C2752E9D400CE86E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D4B2752E9D400CE86E0 /* RockAnalyzer.app */,
+				27AA9D5B2752E9D500CE86E0 /* RockAnalyzerTests.xctest */,
+				27AA9D652752E9D500CE86E0 /* RockAnalyzerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27AA9D4D2752E9D400CE86E0 /* RockAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				27F9565D2758B9FD0040180E /* Icons */,
+				27AA9D522752E9D500CE86E0 /* Assets.xcassets */,
+				27AA9D542752E9D500CE86E0 /* Preview Content */,
+			);
+			path = RockAnalyzer;
+			sourceTree = "<group>";
+		};
+		27AA9D542752E9D500CE86E0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D552752E9D500CE86E0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27AA9D5E2752E9D500CE86E0 /* RockAnalyzerTests */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D5F2752E9D500CE86E0 /* RockAnalyzerTests.swift */,
+			);
+			path = RockAnalyzerTests;
+			sourceTree = "<group>";
+		};
+		27AA9D682752E9D500CE86E0 /* RockAnalyzerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D692752E9D500CE86E0 /* RockAnalyzerUITests.swift */,
+				27AA9D6B2752E9D500CE86E0 /* RockAnalyzerUITestsLaunchTests.swift */,
+			);
+			path = RockAnalyzerUITests;
+			sourceTree = "<group>";
+		};
+		27AA9D7A2752EBC300CE86E0 /* Image Predictor */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D7B2752EBC300CE86E0 /* ImagePredictor.swift */,
+			);
+			path = "Image Predictor";
+			sourceTree = "<group>";
+		};
+		27AA9D7C2752EBC300CE86E0 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D7D2752EBC300CE86E0 /* MainViewController.swift */,
+				27AA9D7E2752EBC300CE86E0 /* Main.storyboard */,
+				27AA9D802752EBC300CE86E0 /* MainViewController+CameraPicker.swift */,
+				27AA9D812752EBC300CE86E0 /* MainViewController+PhotoPicker.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		27AA9D822752EBC300CE86E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D832752EBC300CE86E0 /* VNClassificationObservation+confidenceString.swift */,
+				27AA9D842752EBC300CE86E0 /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27AA9D852752EBC300CE86E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				27F956822759DFCE0040180E /* RockNet_v2_quant.mlmodel */,
+				27AA9D872752EBC300CE86E0 /* NOTICE.txt */,
+				27AA9D882752EBC300CE86E0 /* LICENSE.txt */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		27AA9D9E2752F35B00CE86E0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				27AA9D9F2752F35B00CE86E0 /* LaunchScreen.storyboard */,
+				27AA9DA12752F35B00CE86E0 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		27F9565D2758B9FD0040180E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				27F956802758BD1A0040180E /* RockAI Icon.png */,
+				27F956612758BA1D0040180E /* icon_20pt.png */,
+				27F9566C2758BA330040180E /* icon_20pt@2x.png */,
+				27F9566B2758BA310040180E /* icon_20pt@3x.png */,
+				27F9565F2758BA190040180E /* icon_29pt.png */,
+				27F956602758BA1B0040180E /* icon_29pt@2x.png */,
+				27F956642758BA230040180E /* icon_29pt@3x.png */,
+				27F9566A2758BA2F0040180E /* icon_40pt.png */,
+				27F9565E2758BA160040180E /* icon_40pt@2x.png */,
+				27F956682758BA2B0040180E /* icon_40pt@3x.png */,
+				27F9566D2758BA350040180E /* icon_60pt@2x.png */,
+				27F956692758BA2D0040180E /* icon_60pt@3x.png */,
+				27F956622758BA1F0040180E /* icon_76pt.png */,
+				27F956632758BA210040180E /* icon_76pt@2x.png */,
+				27F956662758BA270040180E /* icon_83.5@2x.png */,
+				27F956652758BA250040180E /* Icon.png */,
+				27F956672758BA290040180E /* iOS App Icon Template.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27AA9D4A2752E9D400CE86E0 /* RockAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27AA9D6F2752E9D500CE86E0 /* Build configuration list for PBXNativeTarget "RockAnalyzer" */;
+			buildPhases = (
+				27AA9D472752E9D400CE86E0 /* Sources */,
+				27AA9D482752E9D400CE86E0 /* Frameworks */,
+				27AA9D492752E9D400CE86E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RockAnalyzer;
+			productName = RockAnalyzer;
+			productReference = 27AA9D4B2752E9D400CE86E0 /* RockAnalyzer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27AA9D5A2752E9D500CE86E0 /* RockAnalyzerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27AA9D722752E9D500CE86E0 /* Build configuration list for PBXNativeTarget "RockAnalyzerTests" */;
+			buildPhases = (
+				27AA9D572752E9D500CE86E0 /* Sources */,
+				27AA9D582752E9D500CE86E0 /* Frameworks */,
+				27AA9D592752E9D500CE86E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27AA9D5D2752E9D500CE86E0 /* PBXTargetDependency */,
+			);
+			name = RockAnalyzerTests;
+			productName = RockAnalyzerTests;
+			productReference = 27AA9D5B2752E9D500CE86E0 /* RockAnalyzerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27AA9D642752E9D500CE86E0 /* RockAnalyzerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27AA9D752752E9D500CE86E0 /* Build configuration list for PBXNativeTarget "RockAnalyzerUITests" */;
+			buildPhases = (
+				27AA9D612752E9D500CE86E0 /* Sources */,
+				27AA9D622752E9D500CE86E0 /* Frameworks */,
+				27AA9D632752E9D500CE86E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27AA9D672752E9D500CE86E0 /* PBXTargetDependency */,
+			);
+			name = RockAnalyzerUITests;
+			productName = RockAnalyzerUITests;
+			productReference = 27AA9D652752E9D500CE86E0 /* RockAnalyzerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27AA9D432752E9D400CE86E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					27AA9D4A2752E9D400CE86E0 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					27AA9D5A2752E9D500CE86E0 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 27AA9D4A2752E9D400CE86E0;
+					};
+					27AA9D642752E9D500CE86E0 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 27AA9D4A2752E9D400CE86E0;
+					};
+				};
+			};
+			buildConfigurationList = 27AA9D462752E9D400CE86E0 /* Build configuration list for PBXProject "RockAnalyzer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27AA9D422752E9D400CE86E0;
+			productRefGroup = 27AA9D4C2752E9D400CE86E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27AA9D4A2752E9D400CE86E0 /* RockAnalyzer */,
+				27AA9D5A2752E9D500CE86E0 /* RockAnalyzerTests */,
+				27AA9D642752E9D500CE86E0 /* RockAnalyzerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27AA9D492752E9D400CE86E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F9566E2758BA350040180E /* icon_40pt@2x.png in Resources */,
+				27AA9D8B2752EBC300CE86E0 /* Main.storyboard in Resources */,
+				27F9567C2758BA350040180E /* icon_20pt@2x.png in Resources */,
+				27AA9D562752E9D500CE86E0 /* Preview Assets.xcassets in Resources */,
+				27AA9D912752EBC300CE86E0 /* NOTICE.txt in Resources */,
+				27F956812758BD1A0040180E /* RockAI Icon.png in Resources */,
+				27F9567B2758BA350040180E /* icon_20pt@3x.png in Resources */,
+				27F956742758BA350040180E /* icon_29pt@3x.png in Resources */,
+				27F956712758BA350040180E /* icon_20pt.png in Resources */,
+				27F956722758BA350040180E /* icon_76pt.png in Resources */,
+				27F956782758BA350040180E /* icon_40pt@3x.png in Resources */,
+				27F956792758BA350040180E /* icon_60pt@3x.png in Resources */,
+				27F956732758BA350040180E /* icon_76pt@2x.png in Resources */,
+				27AA9D922752EBC300CE86E0 /* LICENSE.txt in Resources */,
+				27AA9DA32752F35B00CE86E0 /* LaunchScreen.storyboard in Resources */,
+				27F956702758BA350040180E /* icon_29pt@2x.png in Resources */,
+				27F9567A2758BA350040180E /* icon_40pt.png in Resources */,
+				27AA9D532752E9D500CE86E0 /* Assets.xcassets in Resources */,
+				27F956752758BA350040180E /* Icon.png in Resources */,
+				27F956772758BA350040180E /* iOS App Icon Template.png in Resources */,
+				27F956762758BA350040180E /* icon_83.5@2x.png in Resources */,
+				27F9566F2758BA350040180E /* icon_29pt.png in Resources */,
+				27F9567D2758BA350040180E /* icon_60pt@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA9D592752E9D500CE86E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA9D632752E9D500CE86E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27AA9D472752E9D400CE86E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AA9D892752EBC300CE86E0 /* ImagePredictor.swift in Sources */,
+				271CF14827575A530023460F /* WelcomeViewController.swift in Sources */,
+				27AA9DA42752F35B00CE86E0 /* AppDelegate.swift in Sources */,
+				278560F1275732F000790CE3 /* InfoViewController.swift in Sources */,
+				27AA9D8D2752EBC300CE86E0 /* MainViewController+PhotoPicker.swift in Sources */,
+				27AA9D8E2752EBC300CE86E0 /* VNClassificationObservation+confidenceString.swift in Sources */,
+				27AA9D8F2752EBC300CE86E0 /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
+				27AA9D8A2752EBC300CE86E0 /* MainViewController.swift in Sources */,
+				27F956832759DFCF0040180E /* RockNet_v2_quant.mlmodel in Sources */,
+				27AA9D8C2752EBC300CE86E0 /* MainViewController+CameraPicker.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA9D572752E9D500CE86E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AA9D602752E9D500CE86E0 /* RockAnalyzerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27AA9D612752E9D500CE86E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27AA9D6A2752E9D500CE86E0 /* RockAnalyzerUITests.swift in Sources */,
+				27AA9D6C2752E9D500CE86E0 /* RockAnalyzerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27AA9D5D2752E9D500CE86E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27AA9D4A2752E9D400CE86E0 /* RockAnalyzer */;
+			targetProxy = 27AA9D5C2752E9D500CE86E0 /* PBXContainerItemProxy */;
+		};
+		27AA9D672752E9D500CE86E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27AA9D4A2752E9D400CE86E0 /* RockAnalyzer */;
+			targetProxy = 27AA9D662752E9D500CE86E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27AA9D7E2752EBC300CE86E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27AA9D7F2752EBC300CE86E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27AA9D9F2752F35B00CE86E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27AA9DA02752F35B00CE86E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27AA9D6D2752E9D500CE86E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27AA9D6E2752E9D500CE86E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27AA9D702752E9D500CE86E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RockAnalyzer/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HY8XC22ZK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RockAnalyzer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RockAI;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Takes pictures to demonstrate image recognition.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyjanecka.RockAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27AA9D712752E9D500CE86E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RockAnalyzer/Preview Content\"";
+				DEVELOPMENT_TEAM = 6HY8XC22ZK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RockAnalyzer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RockAI;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Takes pictures to demonstrate image recognition.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.colbyjanecka.RockAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		27AA9D732752E9D500CE86E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiplandic.RockAnalyzerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockAnalyzer.app/RockAnalyzer";
+			};
+			name = Debug;
+		};
+		27AA9D742752E9D500CE86E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiplandic.RockAnalyzerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RockAnalyzer.app/RockAnalyzer";
+			};
+			name = Release;
+		};
+		27AA9D762752E9D500CE86E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiplandic.RockAnalyzerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RockAnalyzer;
+			};
+			name = Debug;
+		};
+		27AA9D772752E9D500CE86E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiplandic.RockAnalyzerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RockAnalyzer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27AA9D462752E9D400CE86E0 /* Build configuration list for PBXProject "RockAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27AA9D6D2752E9D500CE86E0 /* Debug */,
+				27AA9D6E2752E9D500CE86E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27AA9D6F2752E9D500CE86E0 /* Build configuration list for PBXNativeTarget "RockAnalyzer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27AA9D702752E9D500CE86E0 /* Debug */,
+				27AA9D712752E9D500CE86E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27AA9D722752E9D500CE86E0 /* Build configuration list for PBXNativeTarget "RockAnalyzerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27AA9D732752E9D500CE86E0 /* Debug */,
+				27AA9D742752E9D500CE86E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27AA9D752752E9D500CE86E0 /* Build configuration list for PBXNativeTarget "RockAnalyzerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27AA9D762752E9D500CE86E0 /* Debug */,
+				27AA9D772752E9D500CE86E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27AA9D432752E9D400CE86E0 /* Project object */;
+}
